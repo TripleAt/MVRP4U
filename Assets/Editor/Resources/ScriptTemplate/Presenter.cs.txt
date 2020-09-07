@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Script.#SCRIPTSCENENAME.Models;
+using Script.#SCRIPTSCENENAME.Views;
+using UniRx;
+using System;
+
+namespace #NAMESPACE
+{
+    public class #SCRIPTNAME#Presenter : MonoBehaviour
+    {
+        private readonly #SCRIPTNAME#View _view;
+        private readonly #SCRIPTNAME#Model _model;
+        
+        public #SCRIPTNAME#Presenter(#SCRIPTNAME#Model model, #SCRIPTNAME#View view)
+        {
+            _model =  model ?? throw new ArgumentNullException(nameof(model));
+            _view = view ? view : throw new ArgumentNullException(nameof(view));
+
+        }
+    }
+}
