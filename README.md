@@ -2,6 +2,7 @@
 UnityのMV(R)Pの実装サンプルです。
 
 UniRx、Zenject(Extenject)を使用
+Unity2019.4.6f1を使用
 
 
 ## Zenject(Extenject)
